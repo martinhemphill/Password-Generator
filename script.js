@@ -57,5 +57,23 @@ function generatePassword() {
     charRange += specialRange;
   }
 
-  
+  else {
+    if (charRange < 1) {
+      alert("You must choose at least one character set")
+    }
+  }
+
+  var charSetLength = charRange.length;
+
+  function randomize(length) {
+    for (i = 0; i <= length; i++) {
+      passwordResult += charRange.charAt(
+        Math.floor(Math.random() * charSetLength)
+      );
+    }
+    return passwordResult;
+  }
+
+  console.log(passwordResult);
+
 }
