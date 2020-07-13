@@ -9,20 +9,6 @@ var specialRange = ["!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"];
 var passwordResult = "";
 var charRange = "";
 
-// User Password Prompts for Condition
-var passwordLengthInput = prompt("Length of password between 8 - 128 characters");
-var passwordLength = parseInt(passwordLengthInput);
-var passwordLowercase = confirm("Do you want lower case characters?");
-var passwordUppercase = confirm("Do you want upper case characters?");
-var passwordNumbers = confirm("Do you want numbers?");
-var passwordSpecial = confirm("Do you want special characters?");
-
-console.log (passwordLength);
-console.log (passwordLowercase);
-console.log (passwordUppercase);
-console.log (passwordNumbers);
-console.log (passwordSpecial);
-
 
 
 // Add event listener to generate button
@@ -41,6 +27,35 @@ function writePassword() {
 // Add generate password function
 
 function generatePassword() {
+
+  // User Password Prompts for Condition
+  var passwordLengthInput = prompt("Length of password between 8 - 128 characters");
+  var passwordLength = parseInt(passwordLengthInput);
+  var passwordLowercase = confirm("Do you want lower case characters?");
+  var passwordUppercase = confirm("Do you want upper case characters?");
+  var passwordNumbers = confirm("Do you want numbers?");
+  var passwordSpecial = confirm("Do you want special characters?");
+
+  if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
+    alert("You must enter a valid number between 8 and 128");
+    return;
+  }
+
+  if (passwordLowercase) {
+    charRange += lowercaseRange;
+  }
+
+  if (passwordUppercase) {
+    charRange += uppercaseRange;
+  }
+
+  if (passwordNumbers) {
+    charRange += numbersRange;
+  }
+
+  if (passwordSpecial) {
+    charRange += specialRange;
+  }
 
   
 }
