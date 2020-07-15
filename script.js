@@ -28,6 +28,7 @@ function writePassword() {
 
 function generatePassword() {
 
+  
   // User Password Prompts for Condition
   var passwordLengthInput = prompt("Length of password between 8 - 128 characters");
   var passwordLength = parseInt(passwordLengthInput);
@@ -74,6 +75,8 @@ function generatePassword() {
     return passwordResult;
   }
 
-  console.log(passwordResult);
+  password = randomize(passwordLengthInput - 1)
+  
+  return password;
 
 }
