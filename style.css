@@ -128,10 +128,18 @@ button[disabled] {
   #password {
     font-size: 1rem;
   }
+
+  #card {
+    transform: scale(0.9);
+  }
 }
 
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+
+  #card {
+    transform: scale(0.9);
   }
 }
