@@ -1,4 +1,4 @@
-# homework3
+# Password Generator
 Homework3
 
 Homework assignment objective. Create a password generator based on user-selected criteria. App will run in browser.
