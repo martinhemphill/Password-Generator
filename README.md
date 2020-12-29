@@ -5,8 +5,8 @@ Homework assignment objective. Create a password generator based on user-selecte
 
 Application needs to feature a clean responsive interface and randomly generate passwords that meet established criteria.
 
-Deployed Application: https://martinhemphill.github.io/homework3/
-Homework3 Repository URL: https://github.com/martinhemphill/homework3
+Deployed Application: https://martinhemphill.github.io/Password-Generator/
+Homework3 Repository URL: https://github.com/martinhemphill/Password-Generator
 
 Application should prompt user for list of critera on password generation:
 
